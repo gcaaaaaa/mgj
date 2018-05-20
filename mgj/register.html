@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>蘑菇街</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/master.css"/>
+		<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="header" class="clear">
+			<div class="head">
+				<div class="head-l left">
+					<img src="images/upload_ie4gkmjvgvqtiytdg4zdambqgiyde_220x52.png"/>
+				</div>
+				<div class="head-r left">
+					依《网络安全法》相关要求，即日起蘑菇街会员登陆需绑定手机。为保障您的账户安全及正常使用，如您尚未绑定，请尽快完成绑定，感谢您的理解和支持!
+				</div>
+			</div>
+		</div>
+	    <div id="main">
+	    	<div class="main-register">
+	    		<div id="main-register">
+	    			注册
+	    		</div>
+	    		<form action="php/register.php" method="post">
+	    			<ul>
+		    			<li>
+		    				<span>用户名：</span><input type="text" name="username" id="username" value="" placeholder="3-15字符长度，支持汉字、字母、数字及_" /><span></span>
+		    			</li>
+		    			<li>
+		    				<span>密码：</span><input type="text" name="password" id="password" value="" placeholder="不得少于6位" />
+		    			</li>
+		    			<li>
+		    				<span>密码重复：</span><input type="text" name="repass" id="repass" />
+		    			</li>
+		    			<li>
+		    				<span>邮箱：</span><input type="text" name="email" id="email" />
+		    			</li>
+		    			<li class="main-register-submit">
+		    				<input type="submit" value="注册" name="submit" />
+		    			</li>
+	    		   </ul>
+	    		</form>
+	    		<div class="main-register-denglu">
+	    			<a href="login.html">登录</a>
+	    		</div>
+	    	</div>
+	        
+	    </div>
+	    <div id="foot">
+	    	<img src="images/dibu.jpg"/>
+	    </div>
+	    <script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+        	//表单验证-用户名
+			$(function(){
+				var bstop=true;//不通过
+				var usereg=/^([\u4e00-\u9fa5]|[\w\-]){3,15}$/;
+				$('#username').on('blur',function(){
+					var username=$(this).val();//获取用户名值
+					if(username!=''){//检测用户名是否为空
+						if(usereg.test(username)){//检测用户名是否满足正则
+							//将当前的用户名给后端，后端和数据库进行匹配，不管是否存在，后端返回结果
+							$.ajax({
+								type:'post',
+								url:'php/register.php',
+								data:{
+									name:username//获取用户名给后端
+								},
+								success:function(d){
+									if(d){
+										$('#username').next('span').css('color','red').html('用户名已存在');
+										bstop=true;
+									}else{
+										$('#username').next('span').css('color','green').html('√');
+										bstop=false;
+									}
+								}
+							})
+						}else{
+							$(this).next('span').css('color','red').html('格式不正确');
+							bstop=true;
+						}
+					}else{
+						$(this).next('span').css('color','red').html('用户名不能为空');
+						bstop=true;
+					}
+				});
+				
+				
+				$('form').on('submit',function(){//验证不通过无法提交的
+					if(bstop){
+						return false;//阻止按钮跳转。
+					}
+				});
+			});
+        </script>
+	</body>
+</html>

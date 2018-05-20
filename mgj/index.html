@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>蘑菇街</title>
+		<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/charu.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		
+		<script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<div id="header" class="clear">
+			<div class="header-left left">
+				<a href="#">蘑菇街首页</a>
+			</div>
+			<div class="header-right right">
+				<ul>
+					<li><a href="login.html">登录</a></li>
+					<li><a href="#">我的订单</a></li>
+					<li><a href="#">购物车</a></li>
+					<li class="header-right4"><a href="#">客户服务</a>
+						<ol>
+							<li><a href="#">消费者服务</a></li>
+							<li><a href="#">商家服务</a></li>
+							<li><a href="#">规则中心</a></li>
+						</ol>
+					</li>
+					<li class="header-right4"><a href="#" style="border: 0;">商家后台</a>
+						<ol>
+							<li><a href="#">后台管理</a></li>
+							<li><a href="#">商家社区</a></li>
+							<li><a href="#">商家培训</a></li>
+							<li><a href="#">市场入住</a></li>
+						</ol><span id="header-right-span"></span></li>
+				</ul>
+			</div>
+		</div>
+		<!--头部-->
+		<div id="search" class="clear">
+			<div class="search-l left">
+				<img src="images/170904_1fj9406416501i4lkabcc0hjb8341_480x180.png"/>
+			</div>
+			<div class="search-m left">
+				<div class="search-m-box clear">
+					<div class="search-m-boxl left">
+					搜商品<span></span>
+					<ul>
+						<li>商品</li>
+						<li>店铺</li>
+					</ul>
+					</div>
+					<form class="left" action="http://list.mogujie.com/s" method="get">
+						<input type="text" name="" id="form" value="" />
+						
+						<input type="submit" name="" id="formbutton" value="搜索" />
+						<ul class="search-m-box-ul">
+							
+						</ul>
+					</form>
+				</div>
+			    <div class="search-m-nav">
+			    	<ul class="clear">
+			    		<li><a href="#">睡衣</a></li>
+			    		<li><a href="#" class="search-m-nav-color">裙子</a></li>
+			    		<li><a href="#">短袖</a></li>
+			    		<li><a href="#"  class="search-m-nav-color">连衣裙</a></li>
+			    		<li><a href="#"  class="search-m-nav-color">凉鞋</a></li>
+			    		<li><a href="#">拖鞋</a></li>
+			    		<li><a href="#">外套</a></li>
+			    		<li><a href="#">阔腿裤</a></li>
+			    		<li><a href="#">小白鞋</a></li>
+			    		<li><a href="#">半身裙</a></li>
+			    	</ul>
+			    </div>
+			</div>
+			<div class="search-r right">
+				<img src="images/180510_0hk5cb4l87bjlc65k0253jfclk2b3_440x180.png" alt="" />
+			</div>
+		</div>
+		<!--搜索-->
+		<div id="nav" class="clear">
+			<div class="nav-left left">
+				<span>主题市场</span>
+				<div id="subnav">
+					<ul>
+						<li class="clear">
+							<h4 class="left"><a href="">上衣</a></h4>
+							<ol class="left subnav-ol">
+								<li><a href="#">T恤<span class="subnav-icon"></span></a></li>
+								<li><a href="#" class="subnav-color">夏上新</a></li>
+								<li><a href="#">入夏套装<span class="subnav-icon"></span></a></li>
+							</ol>
+						</li>
+						<li class="clear">
+								<h4 class="left"><a href="">裙子</a></h4>
+								<ol class="left subnav-ol">
+									<li><a href="#">美裙套装</a></li>
+									<li><a href="#">连衣裙<span class="subnav-icon"></span></a></li>
+									<li><a href="#" class="subnav-color">高腰裙</a></li>
+								</ol>
+							</li>
+						<li class="clear">
+							<h4 class="left"><a href="">裤子</a></h4>
+							<ol class="left subnav-ol">
+								<li><a href="#" class="subnav-color">牛仔裤</a></li>
+								<li><a href="#" class="subnav-color">休闲裤</a></li>
+								<li><a href="#" class="subnav-color">打底裤</a></li>
+							</ol>
+						</li>
+						<li class="clear">
+							<h4 class="left"><a href="">女鞋</a></h4>
+							<ol class="left subnav-ol">
+								<li><a href="#" class="subnav-color">凉鞋<span class="subnav-icon"></span></a></li>
+								<li><a href="#">单鞋</a></li>
+								<li><a href="#">休闲运动</a></li>
+							</ol>
+						</li>
+						<li class="clear">
+							<h4 class="left"><a href="">包包</a></h4>
+							<ol class="left subnav-ol">
+								<li><a href="#">双肩包<span class="subnav-icon"></span></a></li>
+								<li><a href="#" class="subnav-color">斜挎包</a></li>
+								<li><a href="#">迷你小包</a></li>
+							</ol>
+						</li>
+						<li class="clear">
+							<h4 class="left"><a href="">男友</a></h4>
+							<ol class="left subnav-ol">
+								<li><a href="#">漕T</a></li>
+								<li><a href="#">休闲裤</a></li>
+								<li><a href="#">休闲鞋<span class="subnav-icon"></span></a></li>
+							</ol>
+						</li>
+						<li class="clear">
+							<h4 class="left"><a href="">运动</a></h4>
+							<ol class="left subnav-ol">
+								<li><a href="#">运动套装<span class="subnav-icon"></span></a></li>
+								<li><a href="#">运动鞋</a></li>
+								<li><a href="#" class="subnav-color">性感泳衣</a></li>
+							</ol>
+						</li>
+						<li class="clear">
+							<h4 class="left"><a href="">配饰</a></h4>
+							<ol class="left subnav-ol">
+								<li><a href="#">棒球帽<span class="subnav-icon"></span></a></li>
+								<li><a href="#" class="subnav-color">耳饰</a></li>
+								<li><a href="#">墨镜</a></li>
+							</ol>
+						</li>
+						<li class="clear">
+							<h4 class="left"><a href="">美妆</a></h4>
+							<ol class="left subnav-ol">
+								<li><a href="#">护肤套装<span class="subnav-icon"></span></a></li>
+								<li><a href="#">面膜<span class="subnav-icon"></span></a></li>
+								<li><a href="#" class="subnav-color">防晒</a></li>
+							</ol>
+						</li>
+						<li class="clear">
+							<h4 class="left"><a href="">家居</a></h4>
+							<ol class="left subnav-ol">
+								<li><a href="#">家居鞋</a></li>
+								<li><a href="#">四件套</a></li>
+								<li><a href="#">小家具</a></li>
+							</ol>
+						</li>
+						<li class="clear">
+							<h4 class="left"><a href="">内衣</a></h4>
+							<ol class="left subnav-ol">
+								<li><a href="#">少女内衣</a></li>
+								<li><a href="#">睡衣</a></li>
+								<li><a href="#">内裤</a></li>
+							</ol>
+						</li>
+                        <li class="clear">
+							<h4 class="left"><a href="">母婴</a></h4>
+							<ol class="left subnav-ol">
+								<li><a href="#">新生儿<span class="subnav-icon"></span></a></li>
+								<li><a href="#">孕妇装</a></li>
+								<li><a href="#" class="subnav-color">萌娃童鞋</a></li>
+							</ol>
+						</li>
+						<li class="clear">
+								<h4 class="left"><a href="">电器</a></h4>
+								<ol class="left subnav-ol">
+									<li><a href="#" class="subnav-color">手机壳</a></li>
+									<li><a href="#" >卷发棒<span class="subnav-icon"></span></a></li>
+									<li><a href="#">移动电源</a></li>
+								</ol>
+							</li>
+						<li class="clear">
+							<h4 class="left"><a href="">食品</a></h4>
+							<ol class="left subnav-ol">
+								<li><a href="#">超值零食<span class="subnav-icon"></span></a></li>
+								<li><a href="#" class="subnav-color">进口</a></li>
+								<li><a href="#">怀旧零食</a></li>
+							</ol>
+						</li>
+					</ul>
+				</div>
+			    <!--导航-->
+			</div>
+			<div class="nav-right left">
+				<ul>
+					<li><a href="#">省钱团购</a></li>
+					<li><a href="#">限时快抢</a></li>
+					<li><a href="#">品质优选</a></li>
+				</ul>
+			</div>
+		    <div id="san-subnav" class="clear">
+		    	<div class="san-subnav-l left">
+		    		<div class="san-subnav1">
+		    		<div class="san-subnav-h clear">
+			    		<div class="san-subnav-hl left">
+			    			当季热卖
+			    		</div>
+			    		<div class="san-subnav-hr right">
+			    			更多>
+			    		</div>
+		    	    </div>
+		    	    <ul class="clear">
+		    	    	<!--<li><a href="#">夏上新</a></li>
+		    	    	-->
+		    	    </ul>
+		    	</div>
+			    	<div class="san-subnav2">
+			    		<div class="san-subnav-h clear">
+				    		<div class="san-subnav-hl left">
+				    			流行新品
+				    		</div>
+				    		<div class="san-subnav-hr right">
+				    			更多>
+				    		</div>
+			    	    </div>
+			    	    <ul class="clear">
+			    	    	<!--<li><a href="#">夏上新</a></li>
+			    	    	-->
+			    	    </ul>
+			    	</div>
+			    	<div class="san-subnav3">
+		    		<div class="san-subnav-h clear">
+			    		<div class="san-subnav-hl left">
+			    			潮流时尚
+			    		</div>
+			    		<div class="san-subnav-hr right">
+			    			更多>
+			    		</div>
+		    	    </div>
+		    	    <ul class="clear">
+		    	    	<!--<li><a href="#">夏上新</a></li>
+		    	    	-->
+		    	    </ul>
+		    	</div>
+		    	</div>
+		    	<div class="san-subnav-r left">
+		    		<p>/猜你喜欢/</p>
+		    		<ul class="clear">
+		    			<!--<li>
+		    				<a href=""><img src="http://s3.mogucdn.com/p2/161002/72533580_75d4gbl0g719a1igak2ii1ff2gli5_640x960.jpg_100x100.v1cAC.70.webp"/>
+		    				<span>qweqwweqweqwwwwwwwwwwqqqqqqqqq</span>
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href=""><img src="http://s3.mogucdn.com/p2/161002/72533580_75d4gbl0g719a1igak2ii1ff2gli5_640x960.jpg_100x100.v1cAC.70.webp"/>
+		    				<span>wqqqqqqqqqqqeqewqqqqqqqqqqwqqwe</span>
+		    				</a>
+		    			</li>
+		    		    <li>
+		    				<a href=""><img src="http://s3.mogucdn.com/p2/161002/72533580_75d4gbl0g719a1igak2ii1ff2gli5_640x960.jpg_100x100.v1cAC.70.webp"/>
+		    				<span>qweqwweqweqwwwwwwwwwwqqqqqqqqq</span>
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href=""><img src="http://s3.mogucdn.com/p2/161002/72533580_75d4gbl0g719a1igak2ii1ff2gli5_640x960.jpg_100x100.v1cAC.70.webp"/>
+		    				<span>wqqqqqqqqqqqeqewqqqqqqqqqqwqqwe</span>
+		    				</a>
+		    			</li>
+		    		    <li>
+		    				<a href=""><img src="http://s3.mogucdn.com/p2/161002/72533580_75d4gbl0g719a1igak2ii1ff2gli5_640x960.jpg_100x100.v1cAC.70.webp"/>
+		    				<span>qweqwweqweqwwwwwwwwwwqqqqqqqqq</span>
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href=""><img src="http://s3.mogucdn.com/p2/161002/72533580_75d4gbl0g719a1igak2ii1ff2gli5_640x960.jpg_100x100.v1cAC.70.webp"/>
+		    				<span>wqqqqqqqqqqqeqewqqqqqqqqqqwqqwe</span>
+		    				</a>
+		    			</li>-->
+		    		</ul>
+		    	</div>
+		    </div>
+		</div>
+		<!--导航-->
+		<div id="banner">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><img src="images/180508_2e2e4fkb9d7fgj73gb7922c69506f_768x440.jpg"/></div>
+			       
+			    </div>
+			    <div class="swiper-pagination"></div>
+			</div>
+			<div class="banner-user">
+				<div class="banner-user-top">
+					<a href="#"></a>
+				</div>
+				<div class="banner-welcome">
+					<span>菇凉好！</span>
+					<span class="banner-welcome-s">欢迎来逛蘑菇街~</span>
+				</div>
+				<div class="banner-hy">
+					<a href="#">会员中心</a>
+				</div>
+			</div>
+			<div class="banner-fashion">
+				<p>春装上新</p>
+				<p>精选潮流美衣</p>
+				<a href=""><img src="images/180327_8f7937ekhkb3940k12gieg831h0jb_260x260.png_200x9999.v1c7E.70.webp" alt="" /></a>
+			</div>
+		</div>
+		<!--banner-->
+		<div id="main">
+			<div id="todayRobbed" class="clear">
+				<div class="todayRobbed-l left">
+					<img src="images/180423_4c1k410gfcjj100b7ck185ldbc1d4_460x588.png_300x9999.v1c7E.70.webp"/>
+					<div id="time">
+						<div class="time">
+							<span class="time-g hourse"></span>
+							<span class="time-h maohao">:</span>
+							<span class="time-g minter"></span>
+							<span class="time-h maohao">:</span>
+							<span class="time-g second"></span>
+						</div>
+					</div>
+				</div>
+			<div class="todayRobbed-r left">
+				<div class="swiper-container" id="swiper1">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide s-lunbo">
+				        	<ul>
+				        	</ul>
+				        </div>
+				         <div class="swiper-slide s-lunbo1">
+				         	<ul>
+				        	</ul>
+				         </div>
+				        <div class="swiper-slide s-lunbo2">
+				        	<ul>
+				        	</ul>
+				       </div>
+				    </div>
+				    <div class="swiper-button-prev lunb-prev"><</div>
+				    <div class="swiper-button-next lunb-next">></div>
+				</div>
+			</div>
+		</div>
+		    <!--今日必抢-->
+			<div id="limitFast">
+				<!--<a href="#"><img src="images/180424_2ikae4b89910ejk2if8ci683a1900_940x300.png_600x9999.v1c7E.70.webp"/></a>
+				<a href="#"><img src="images/180426_219al1b30e2la5ej2d0ahk45599aj_690x450.png_300x9999.v1c7E.70.webp"/></a>
+				<a href="#"><img src="images/180404_3l0ghk0ehfd2kf4dc36eb7d991le6_460x300.png_300x9999.v1c7E.70.webp"/></a>
+				<a href="#"><img src="images/180403_80abkf5308fb7d55idk46cicbbdfc_460x300.png_300x9999.v1c7E.70.webp"/></a>-->
+			</div>
+			<!--限时快抢-->
+			<div id="womenClothes" class="louti">
+				<div class="womenClothes-top clear">
+					<div class="womenClothes-top-l left">
+					   &nbsp;&nbsp;女装
+				    </div>
+				    <div class="womenClothes-top-r left">
+					<ul>
+						<li><a href="#">印花T恤</a></li>
+						<li><a href="#">爆款套装 </a></li>
+						<li><a href="#">连帽卫衣</a></li>
+						<li><a href="#">打底裤 </a></li>
+						<li><a href="#">设计师衬衫</a></li>
+					</ul>
+				    </div>
+				</div>
+			    <div class="womenClothes-main clear">
+			    	<div class="womenClothes-main-l left">
+			    		<img src="images/180330_5befdhg44fk2cgb7g2k33j6jcej4h_460x1248.png_750x9999.v1c7E.80.webp"/>
+			    	</div>
+			    	<div class="womenClothes-main-r left">
+			    		<div class="womenClothes-main-top">
+			    			<div class="swiper-container" id="swiper2">
+						    <div class="swiper-wrapper">
+						        <div class="swiper-slide">
+						        	<ul>
+						        		<li class="womenClothes-lunbo"><a href="#">
+						        			<img src="images/180401_706ejig4lg4312k6211i4c5e2cekg_640x960.jpg_400x600.v1cAC.70.webp"/>
+						        			<p>2018夏季新款宽松印花中长款简约开叉T恤+黑色弹力显瘦薄款韩版白边小脚裤套装</p>
+						        			<p><span>¥</span>59</p>
+						        		</a></li>
+						        		<li class="womenClothes-lunbo"><a href="#">
+						        			<img src="images/180401_706ejig4lg4312k6211i4c5e2cekg_640x960.jpg_400x600.v1cAC.70.webp"/>
+						        			<p>2018夏季新款宽松印花中长款简约开叉T恤+黑色弹力显瘦薄款韩版白边小脚裤套装</p>
+						        			<p><span>¥</span>59</p>
+						        		</a></li>
+						        		<li class="womenClothes-lunbo"><a href="#">
+						        			<img src="images/180401_706ejig4lg4312k6211i4c5e2cekg_640x960.jpg_400x600.v1cAC.70.webp"/>
+						        			<p>2018夏季新款宽松印花中长款简约开叉T恤+黑色弹力显瘦薄款韩版白边小脚裤套装</p>
+						        			<p><span>¥</span>59</p>
+						        		</a></li>
+						        		<li class="womenClothes-lunbo"><a href="#">
+						        			<img src="images/180401_706ejig4lg4312k6211i4c5e2cekg_640x960.jpg_400x600.v1cAC.70.webp"/>
+						        			<p>2018夏季新款宽松印花中长款简约开叉T恤+黑色弹力显瘦薄款韩版白边小脚裤套装</p>
+						        			<p><span>¥</span>59</p>
+						        		</a></li>
+						        	    
+						        	</ul>
+						        </div>
+						         <div class="swiper-slide">
+						         	<ul>
+						        		<li class="womenClothes-lunbo"><a href="#">
+						        			<img src="images/180401_706ejig4lg4312k6211i4c5e2cekg_640x960.jpg_400x600.v1cAC.70.webp"/>
+						        			<p>2018夏季新款宽松印花中长款简约开叉T恤+黑色弹力显瘦薄款韩版白边小脚裤套装</p>
+						        			<p><span>¥</span>59</p>
+						        		</a></li>
+						        		<li class="womenClothes-lunbo"><a href="#">
+						        			<img src="images/180401_706ejig4lg4312k6211i4c5e2cekg_640x960.jpg_400x600.v1cAC.70.webp"/>
+						        			<p>2018夏季新款宽松印花中长款简约开叉T恤+黑色弹力显瘦薄款韩版白边小脚裤套装</p>
+						        			<p><span>¥</span>59</p>
+						        		</a></li>
+						        		<li class="womenClothes-lunbo"><a href="#">
+						        			<img src="images/180401_706ejig4lg4312k6211i4c5e2cekg_640x960.jpg_400x600.v1cAC.70.webp"/>
+						        			<p>2018夏季新款宽松印花中长款简约开叉T恤+黑色弹力显瘦薄款韩版白边小脚裤套装</p>
+						        			<p><span>¥</span>59</p>
+						        		</a></li>
+						        		<li class="womenClothes-lunbo"><a href="#">
+						        			<img src="images/180401_706ejig4lg4312k6211i4c5e2cekg_640x960.jpg_400x600.v1cAC.70.webp"/>
+						        			<p>2018夏季新款宽松印花中长款简约开叉T恤+黑色弹力显瘦薄款韩版白边小脚裤套装</p>
+						        			<p><span>¥</span>59</p>
+						        		</a></li>
+						        	    
+						        	</ul>
+						         </div>
+						        <div class="swiper-slide">
+						        	<ul>
+						        		<li class="womenClothes-lunbo"><a href="#">
+						        			<img src="images/180401_706ejig4lg4312k6211i4c5e2cekg_640x960.jpg_400x600.v1cAC.70.webp"/>
+						        			<p>2018夏季新款宽松印花中长款简约开叉T恤+黑色弹力显瘦薄款韩版白边小脚裤套装</p>
+						        			<p><span>¥</span>59</p>
+						        		</a></li>
+						        		<li class="womenClothes-lunbo"><a href="#">
+						        			<img src="images/180401_706ejig4lg4312k6211i4c5e2cekg_640x960.jpg_400x600.v1cAC.70.webp"/>
+						        			<p>2018夏季新款宽松印花中长款简约开叉T恤+黑色弹力显瘦薄款韩版白边小脚裤套装</p>
+						        			<p><span>¥</span>59</p>
+						        		</a></li>
+						        		<li class="womenClothes-lunbo"><a href="#">
+						        			<img src="images/180401_706ejig4lg4312k6211i4c5e2cekg_640x960.jpg_400x600.v1cAC.70.webp"/>
+						        			<p>2018夏季新款宽松印花中长款简约开叉T恤+黑色弹力显瘦薄款韩版白边小脚裤套装</p>
+						        			<p><span>¥</span>59</p>
+						        		</a></li>
+						        		<li class="womenClothes-lunbo"><a href="#">
+						        			<img src="images/180401_706ejig4lg4312k6211i4c5e2cekg_640x960.jpg_400x600.v1cAC.70.webp"/>
+						        			<p>2018夏季新款宽松印花中长款简约开叉T恤+黑色弹力显瘦薄款韩版白边小脚裤套装</p>
+						        			<p><span>¥</span>59</p>
+						        		</a></li>
+						        	    
+						        	</ul>
+						        </div>
+						    </div>
+						    <div class="swiper-button-prev womenClothes-prev"><</div>
+						    <div class="swiper-button-next womenClothes-next">></div>
+						</div>	
+			    		</div>
+			    	    <div class="womenClothes-main-middle">
+			    	    	<!--<a href="#"><img src="images/180404_0bkihfjla1d193ce64325lgj6e94d_940x226.png_940x226.v1cAC.70.webp"/></a>
+			    	    	<a href="#"><img src="images/180330_776ifj652271c3b56jki7hjflhh97_920x452.png_460x226.v1cAC.70.webp"/></a>
+			    	    	<a href="#"><img src="images/180330_64je2lbjdj59c1hk9d69e4d6j076j_920x452.png_460x226.v1cAC.70.webp"/></a>-->
+			    	    </div>
+			    	    <div class="womenClothes-main-bottom clear">
+			    	    	<!--<a href="#">
+			    	    		<div class="womenClothes-bt1 clear left">
+			    	    			<div class="womenClothes-bt1l left">
+			    	    			<span>热卖T恤</span>
+			    	    			<p>早春新品29元起</p>
+			    	    		    </div>
+			    	    		    <div class="womenClothes-bt1r left">
+			    	    			<img src="images/180330_4ejgl46lk37hhei8540ef468ab3bl_83x83.png_100x100.v1cAC.70.webp"/>
+			    	    		    </div>
+			    	    		</div>
+			    	    	</a>
+			    	        <a href="#">
+			    	    		<div class="womenClothes-bt1 clear left">
+			    	    			<div class="womenClothes-bt1l left">
+			    	    			<span>热卖T恤</span>
+			    	    			<p>早春新品29元起</p>
+			    	    		    </div>
+			    	    		    <div class="womenClothes-bt1r left">
+			    	    			<img src="images/180330_4ejgl46lk37hhei8540ef468ab3bl_83x83.png_100x100.v1cAC.70.webp"/>
+			    	    		    </div>
+			    	    		</div>
+			    	    	</a>
+				    	    <a href="#">
+				    	    		<div class="womenClothes-bt1 clear left">
+				    	    			<div class="womenClothes-bt1l left">
+				    	    			<span>热卖T恤</span>
+				    	    			<p>早春新品29元起</p>
+				    	    		    </div>
+				    	    		    <div class="womenClothes-bt1r left">
+				    	    			<img src="images/180330_4ejgl46lk37hhei8540ef468ab3bl_83x83.png_100x100.v1cAC.70.webp"/>
+				    	    		    </div>
+				    	    		</div>
+				    	    	</a>
+				    	    <a href="#">
+			    	    		<div class="womenClothes-bt1 clear left">
+			    	    			<div class="womenClothes-bt1l left">
+			    	    			<span>热卖T恤</span>
+			    	    			<p>早春新品29元起</p>
+			    	    		    </div>
+			    	    		    <div class="womenClothes-bt1r left">
+			    	    			<img src="images/180330_4ejgl46lk37hhei8540ef468ab3bl_83x83.png_100x100.v1cAC.70.webp"/>
+			    	    		    </div>
+			    	    		</div>
+			    	    	</a>
+			    	    --></div>
+			    	</div>
+			    </div>
+			</div>
+			<!--女装-->
+			<div id="shoesDabie" class="louti">
+				<div class="womenClothes-top clear">
+					<div class="womenClothes-top-l left">
+					   &nbsp;&nbsp;女鞋&包包
+				    </div>
+				    <div class="womenClothes-top-r left">
+					<ul>
+						<li><a href="#">焕新凉鞋</a></li>
+						<li><a href="#">单鞋</a></li>
+						<li><a href="#">拖鞋</a></li>
+						<li><a href="#">运动鞋 </a></li>
+						<li><a href="#">休闲鞋</a></li>
+						<li><a href="#">帆布鞋</a></li>
+					</ul>
+				    </div>
+				</div>
+			    <div class="shoesDabie-main">
+			    	<div class="shoesDabie-l left">
+			    		<div class="swiper-container" id="swiper9">
+						    <div class="swiper-wrapper">
+						        <div class="swiper-slide"><img src="images/180416_2affjbcd5d8002ddbg2id8c91cd82_230x555.png_750x9999.v1c7E.80.webp"/></div>
+						        <div class="swiper-slide"><img src="images/180416_2affjbcd5d8002ddbg2id8c91cd82_230x555.png_750x9999.v1c7E.80.webp"/></div>
+						    </div>
+						</div>
+				    </div>
+				    <div class="shoesDabie-m left">
+					    <div class="swiper-container" id="swiper3">
+						    <div class="swiper-wrapper">
+						        <div class="swiper-slide">
+						        	<ul>
+							    		<li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+						    		</a></li>				    	
+						    	    </ul>
+						        </div>
+						         <div class="swiper-slide">
+						         	<ul>
+							    		<li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+						    		</a></li>				    	
+						    	    </ul>
+						         </div>
+						        <div class="swiper-slide">
+						        	<ul>
+							    		<li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+						    		</a></li>				    	
+						    	    </ul>
+						        </div>
+						    </div>
+						    <div class="swiper-pagination"></div>
+					    </div>	
+					</div>
+				    <div class="shoesDabie-r left clear">
+				    	<div class="shoesDabie-r-top clear">
+				    		<div class="shoesDabie-r-topl left">
+				    		  热销商品推荐
+					    	</div>
+					    	<div class="shoesDabie-r-topr right">
+					    		<img src="images/180320_6j5a92c57jl5l8c3j6je38cdle4g8_12x12.png"/>
+					    		换一批
+					    	</div>
+				    	</div>
+				        <div class="shoesDabie-r-m huanyipi">
+				        	
+				        </div>
+				        <div class="shoesDabie-r-m1 huanyipi">
+				        	
+				        </div>
+				        <div class="shoesDabie-r-m2 huanyipi">
+				        	
+				        </div>
+				    </div>
+			    </div>
+			</div>
+			<!--女鞋和包包-->
+			<div id="boyfriendSport" class="louti">
+				<div class="womenClothes-top clear">
+					<div class="womenClothes-top-l left">
+					   &nbsp;&nbsp;男友&运动
+				    </div>
+				    <div class="womenClothes-top-r left">
+					<ul>
+						<li><a href="#">潮男T恤 </a></li>
+						<li><a href="#">卫衣</a></li>
+						<li><a href="#">拖鞋</a></li>
+						<li><a href="#">潮鞋 </a></li>
+						<li><a href="#">休闲裤</a></li>
+						<li><a href="#">万能衬衫</a></li>
+					</ul>
+				    </div>
+				</div>
+			   <div class="shoesDabie-main">
+			    	<div class="shoesDabie-l left">
+			    		<div class="swiper-container" id="swiper10">
+						    <div class="swiper-wrapper">
+						        <div class="swiper-slide"><img src="images/180416_2affjbcd5d8002ddbg2id8c91cd82_230x555.png_750x9999.v1c7E.80.webp"/></div>
+						        <div class="swiper-slide"><img src="images/180416_2affjbcd5d8002ddbg2id8c91cd82_230x555.png_750x9999.v1c7E.80.webp"/></div>
+						    </div>
+						</div>
+			    	
+				    </div>
+				    <div class="shoesDabie-m left">
+					    <div class="swiper-container" id="swiper4">
+						    <div class="swiper-wrapper">
+						        <div class="swiper-slide">
+						        	<ul>
+							    		<li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+						    		</a></li>				    	
+						    	    </ul>
+						        </div>
+						         <div class="swiper-slide">
+						         	<ul>
+							    		<li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+						    		</a></li>				    	
+						    	    </ul>
+						         </div>
+						        <div class="swiper-slide">
+						        	<ul>
+							    		<li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+						    		</a></li>				    	
+						    	    </ul>
+						        </div>
+						    </div>
+						    <div class="swiper-pagination"></div>
+					    </div>	
+					</div>
+				    <div class="shoesDabie-r left">
+				    	<div class="shoesDabie-r-top clear">
+				    		<div class="shoesDabie-r-topl left">
+				    		  热销商品推荐
+					    	</div>
+					    	<div class="shoesDabie-r-topr right">
+					    		<img src="images/180320_6j5a92c57jl5l8c3j6je38cdle4g8_12x12.png"/>
+					    		换一批
+					    	</div>
+				    	</div>
+				    	 <div class="shoesDabie-r-m">
+				        	
+				        </div>
+				        </div>
+			   </div>
+			</div>
+			<!--男友和运动-->
+			<div id="beautyCare" class="louti">
+				<div class="womenClothes-top clear">
+					<div class="womenClothes-top-l left">
+					   &nbsp;&nbsp;美妆&个护 
+				    </div>
+				    <div class="womenClothes-top-r left">
+					<ul>
+						<li><a href="#">补水面膜 </a></li>
+						<li><a href="#">保湿套装</a></li>
+						<li><a href="#">遮瑕粉底</a></li>
+						<li><a href="#">斩男口红 </a></li>
+						<li><a href="#">休闲裤</a></li>
+						<li><a href="#">万能衬衫</a></li>
+					</ul>
+				    </div>
+				</div>
+			   <div class="shoesDabie-main">
+			    	<div class="shoesDabie-l left">
+			    	<div class="swiper-container" id="swiper11">
+						    <div class="swiper-wrapper">
+						        <div class="swiper-slide"><img src="images/180416_2affjbcd5d8002ddbg2id8c91cd82_230x555.png_750x9999.v1c7E.80.webp"/></div>
+						        <div class="swiper-slide"><img src="images/180416_2affjbcd5d8002ddbg2id8c91cd82_230x555.png_750x9999.v1c7E.80.webp"/></div>
+						    </div>
+						</div>
+				    </div>
+				    <div class="shoesDabie-m left">
+					    <div class="swiper-container" id="swiper5">
+						    <div class="swiper-wrapper">
+						        <div class="swiper-slide">
+						        	<ul>
+							    		<li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+						    		</a></li>				    	
+						    	    </ul>
+						        </div>
+						         <div class="swiper-slide">
+						         	<ul>
+							    		<li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+						    		</a></li>				    	
+						    	    </ul>
+						         </div>
+						        <div class="swiper-slide">
+						        	<ul>
+							    		<li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+						    		</a></li>				    	
+						    	    </ul>
+						        </div>
+						    </div>
+						    <div class="swiper-pagination"></div>
+					    </div>	
+					</div>
+				    <div class="shoesDabie-r left">
+				    	<div class="shoesDabie-r-top clear">
+				    		<div class="shoesDabie-r-topl left">
+				    		  热销商品推荐
+					    	</div>
+					    	<div class="shoesDabie-r-topr right">
+					    		<img src="images/180320_6j5a92c57jl5l8c3j6je38cdle4g8_12x12.png"/>
+					    		换一批
+					    	</div>
+				    	</div>
+				        <div class="shoesDabie-r-m">
+				        	
+				        </div>			  
+				    
+				    </div>
+			   </div>		
+			</div>
+			<!--美妆和个护-->
+			<div id="accessories" class="louti">
+				<div class="womenClothes-top clear">
+					<div class="womenClothes-top-l left">
+					   &nbsp;&nbsp;内衣&配饰
+				    </div>
+				    <div class="womenClothes-top-r left">
+					<ul>
+						<li><a href="#">睡衣</a></li>
+						<li><a href="#">短袜 </a></li>
+						<li><a href="#">内衣套装</a></li>
+						<li><a href="#">棒球帽</a></li>
+						<li><a href="#">手表 </a></li>						
+					</ul>
+				    </div>
+				</div>
+			   <div class="shoesDabie-main">
+			    	<div class="shoesDabie-l left">
+			    	      <div class="swiper-container" id="swiper12">
+						    <div class="swiper-wrapper">
+						        <div class="swiper-slide"><img src="images/180416_2affjbcd5d8002ddbg2id8c91cd82_230x555.png_750x9999.v1c7E.80.webp"/></div>
+						        <div class="swiper-slide"><img src="images/180416_2affjbcd5d8002ddbg2id8c91cd82_230x555.png_750x9999.v1c7E.80.webp"/></div>
+						    </div>
+						</div>
+				    </div>
+				    <div class="shoesDabie-m left">
+					    <div class="swiper-container" id="swiper6">
+						    <div class="swiper-wrapper">
+						        <div class="swiper-slide">
+						        	<ul>
+							    		<li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+						    		</a></li>				    	
+						    	    </ul>
+						        </div>
+						         <div class="swiper-slide">
+						         	<ul>
+							    		<li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+						    		</a></li>				    	
+						    	    </ul>
+						         </div>
+						        <div class="swiper-slide">
+						        	<ul>
+							    		<li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+						    		</a></li>				    	
+						    	    </ul>
+						        </div>
+						    </div>
+						    <div class="swiper-pagination"></div>
+					    </div>	
+					</div>
+				    <div class="shoesDabie-r left">
+				    	<div class="shoesDabie-r-top clear">
+				    		<div class="shoesDabie-r-topl left">
+				    		  热销商品推荐
+					    	</div>
+					    	<div class="shoesDabie-r-topr right">
+					    		<img src="images/180320_6j5a92c57jl5l8c3j6je38cdle4g8_12x12.png"/>
+					    		换一批
+					    	</div>
+				    	</div>
+				        <div class="shoesDabie-r-m">
+				        	
+				        </div>
+				    </div>
+			   </div>
+			</div>
+			<!--内衣和配饰-->
+			<div id="furniture" class="louti">
+				<div class="womenClothes-top clear">
+					<div class="womenClothes-top-l left">
+					   &nbsp;&nbsp;家居&电器
+				    </div>
+				    <div class="womenClothes-top-r left">
+					<ul>
+						<li><a href="#">家纺好货 </a></li>
+						<li><a href="#">收纳宝盒</a></li>
+						<li><a href="#">手机壳</a></li>
+						<li><a href="#">美发神器</a></li>
+						<li><a href="#">充电宝 </a></li>
+					</ul>
+				    </div>
+				</div>
+			   <div class="shoesDabie-main">
+			    	<div class="shoesDabie-l left">
+			    	<div class="swiper-container" id="swiper13">
+						    <div class="swiper-wrapper">
+						        <div class="swiper-slide"><img src="images/180416_2affjbcd5d8002ddbg2id8c91cd82_230x555.png_750x9999.v1c7E.80.webp"/></div>
+						        <div class="swiper-slide"><img src="images/180416_2affjbcd5d8002ddbg2id8c91cd82_230x555.png_750x9999.v1c7E.80.webp"/></div>
+						    </div>
+						</div>
+				    </div>
+				    <div class="shoesDabie-m left">
+					    <div class="swiper-container" id="swiper7">
+						    <div class="swiper-wrapper">
+						        <div class="swiper-slide">
+						        	<ul>
+							    		<li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+						    		</a></li>				    	
+						    	    </ul>
+						        </div>
+						         <div class="swiper-slide">
+						         	<ul>
+							    		<li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+						    		</a></li>				    	
+						    	    </ul>
+						         </div>
+						        <div class="swiper-slide">
+						        	<ul>
+							    		<li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+						    		</a></li>				    	
+						    	    </ul>
+						        </div>
+						    </div>
+						    <div class="swiper-pagination"></div>
+					    </div>	
+					</div>
+				    <div class="shoesDabie-r left">
+				    	<div class="shoesDabie-r-top clear">
+				    		<div class="shoesDabie-r-topl left">
+				    		  热销商品推荐
+					    	</div>
+					    	<div class="shoesDabie-r-topr right">
+					    		<img src="images/180320_6j5a92c57jl5l8c3j6je38cdle4g8_12x12.png"/>
+					    		换一批
+					    	</div>
+				    	</div>
+				       <div class="shoesDabie-r-m">
+				        	
+				        </div>
+				    </div>
+			   </div>
+            </div>
+			<!--家具和电器-->
+			<div id="food" class="louti">
+				<div class="womenClothes-top clear">
+					<div class="womenClothes-top-l left">
+					   &nbsp;&nbsp;母婴&食品 
+				    </div>
+				    <div class="womenClothes-top-r left">
+					<ul>
+						<li><a href="#">儿童套装</a></li>
+						<li><a href="#">妈咪套装</a></li>
+						<li><a href="#">玩具用品</a></li>
+						<li><a href="#">零食大礼包</a></li>
+						<li><a href="#">进口零食</a></li>
+					</ul>
+				    </div>
+				</div>
+			    <div class="shoesDabie-main">
+			    	<div class="shoesDabie-l left">
+			    	<div class="swiper-container" id="swiper14">
+						    <div class="swiper-wrapper">
+						        <div class="swiper-slide"><img src="images/180416_2affjbcd5d8002ddbg2id8c91cd82_230x555.png_750x9999.v1c7E.80.webp"/></div>
+						        <div class="swiper-slide"><img src="images/180416_2affjbcd5d8002ddbg2id8c91cd82_230x555.png_750x9999.v1c7E.80.webp"/></div>
+						    </div>
+						</div>
+				    </div>
+				    <div class="shoesDabie-m left">
+					    <div class="swiper-container" id="swiper8">
+						    <div class="swiper-wrapper">
+						        <div class="swiper-slide">
+						        	<ul>
+							    		<li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+						    		</a></li>				    	
+						    	    </ul>
+						        </div>
+						         <div class="swiper-slide">
+						         	<ul>
+							    		<li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+						    		</a></li>				    	
+						    	    </ul>
+						         </div>
+						        <div class="swiper-slide">
+						        	<ul>
+							    		<li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+								    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+								    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+								    		<span>¥69.30</span>
+							    		</a></li>
+							    	    <li class="shoesDabie-mli"><a href="#">
+							    		<img src="images/180414_03bj50lhg2flc510d7kjag2210i45_640x960.jpg_200x200.v1cAC.70.webp" alt="" />
+							    		<p>蛇形缠绕凉鞋小辣椒同款2018新款罗马粗跟绑带露趾水钻蛇形凉鞋女ol低跟露趾工作鞋</p>
+							    		<span>¥69.30</span>
+						    		</a></li>				    	
+						    	    </ul>
+						        </div>
+						    </div>
+						    <div class="swiper-pagination"></div>
+					    </div>	
+					</div>
+				    <div class="shoesDabie-r left">
+				    	<div class="shoesDabie-r-top clear">
+				    		<div class="shoesDabie-r-topl left">
+				    		  热销商品推荐
+					    	</div>
+					    	<div class="shoesDabie-r-topr right">
+					    		<img src="images/180320_6j5a92c57jl5l8c3j6je38cdle4g8_12x12.png"/>
+					    		换一批
+					    	</div>
+				    	</div>
+				       <div class="shoesDabie-r-m">
+				        	
+				        </div>
+				    </div>
+			   </div>
+			</div>
+			<!--母婴和食品-->
+			<div id="guessLike" class="louti">
+				<div class="guessLike-top">
+					猜你喜欢
+				</div>
+				<ul>
+					<!--<li class="guessLike-li"><a href="#">
+						<img src="images/180415_6ka84k4cf8l4li2kfikc786kc2lfl_640x960.jpg_240x320.v1cAC.70.webp" alt="" />
+						<div class="yinchang">
+							找相似
+						</div>
+					<div class="guessLike-wp">
+						<div class="guessLike-w">
+							夏季百搭新款休闲人物印花甜美宽松小清新短袖T恤高腰显瘦包臀裙时尚个性开叉半身裙两件套装女
+						</div>	
+						<div class="guessLike-p clear">
+							<div class="guessLike-pl left">
+							     <b>¥99</b><span>¥141.43</span>
+							</div>
+							<div class="guessLike-pm left">
+								<img src="images/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+							</div>
+							<div class="guessLike-pr left">
+								<span>939</span>
+							</div>
+						</div>
+					</div>
+					</a></li>
+				    <li class="guessLike-li"><a href="#">
+						<img src="images/180415_6ka84k4cf8l4li2kfikc786kc2lfl_640x960.jpg_240x320.v1cAC.70.webp" alt="" />
+						<div class="yinchang">
+							找相似
+						</div>
+					<div class="guessLike-wp">
+						<div class="guessLike-w">
+							夏季百搭新款休闲人物印花甜美宽松小清新短袖T恤高腰显瘦包臀裙时尚个性开叉半身裙两件套装女
+						</div>	
+						<div class="guessLike-p clear">
+							<div class="guessLike-pl left">
+							     <b>¥99</b><span>¥141.43</span>
+							</div>
+							<div class="guessLike-pm left">
+								<img src="images/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+							</div>
+							<div class="guessLike-pr left">
+								<span>939</span>
+							</div>
+						</div>
+					</div>
+					</a></li>
+				    <li class="guessLike-li"><a href="#">
+						<img src="images/180415_6ka84k4cf8l4li2kfikc786kc2lfl_640x960.jpg_240x320.v1cAC.70.webp" alt="" />
+						<div class="yinchang">
+							找相似
+						</div>
+					<div class="guessLike-wp">
+						<div class="guessLike-w">
+							夏季百搭新款休闲人物印花甜美宽松小清新短袖T恤高腰显瘦包臀裙时尚个性开叉半身裙两件套装女
+						</div>	
+						<div class="guessLike-p clear">
+							<div class="guessLike-pl left">
+							     <b>¥99</b><span>¥141.43</span>
+							</div>
+							<div class="guessLike-pm left">
+								<img src="images/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+							</div>
+							<div class="guessLike-pr left">
+								<span>939</span>
+							</div>
+						</div>
+					</div>
+					</a></li>
+				    <li class="guessLike-li"><a href="#">
+						<img src="images/180415_6ka84k4cf8l4li2kfikc786kc2lfl_640x960.jpg_240x320.v1cAC.70.webp" alt="" />
+						<div class="yinchang">
+							找相似
+						</div>
+					<div class="guessLike-wp">
+						<div class="guessLike-w">
+							夏季百搭新款休闲人物印花甜美宽松小清新短袖T恤高腰显瘦包臀裙时尚个性开叉半身裙两件套装女
+						</div>	
+						<div class="guessLike-p clear">
+							<div class="guessLike-pl left">
+							     <b>¥99</b><span>¥141.43</span>
+							</div>
+							<div class="guessLike-pm left">
+								<img src="images/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+							</div>
+							<div class="guessLike-pr left">
+								<span>939</span>
+							</div>
+						</div>
+					</div>
+					</a></li>
+				    <li class="guessLike-li"><a href="#">
+						<img src="images/180415_6ka84k4cf8l4li2kfikc786kc2lfl_640x960.jpg_240x320.v1cAC.70.webp" alt="" />
+						<div class="yinchang">
+							找相似
+						</div>
+					<div class="guessLike-wp">
+						<div class="guessLike-w">
+							夏季百搭新款休闲人物印花甜美宽松小清新短袖T恤高腰显瘦包臀裙时尚个性开叉半身裙两件套装女
+						</div>	
+						<div class="guessLike-p clear">
+							<div class="guessLike-pl left">
+							     <b>¥99</b><span>¥141.43</span>
+							</div>
+							<div class="guessLike-pm left">
+								<img src="images/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+							</div>
+							<div class="guessLike-pr left">
+								<span>939</span>
+							</div>
+						</div>
+					</div>
+					</a></li>
+				    <li class="guessLike-li"><a href="#">
+						<img src="images/180415_6ka84k4cf8l4li2kfikc786kc2lfl_640x960.jpg_240x320.v1cAC.70.webp" alt="" />
+						<div class="yinchang">
+							找相似
+						</div>
+					<div class="guessLike-wp">
+						<div class="guessLike-w">
+							夏季百搭新款休闲人物印花甜美宽松小清新短袖T恤高腰显瘦包臀裙时尚个性开叉半身裙两件套装女
+						</div>	
+						<div class="guessLike-p clear">
+							<div class="guessLike-pl left">
+							     <b>¥99</b><span>¥141.43</span>
+							</div>
+							<div class="guessLike-pm left">
+								<img src="images/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+							</div>
+							<div class="guessLike-pr left">
+								<span>939</span>
+							</div>
+						</div>
+					</div>
+					</a></li>
+				    <li class="guessLike-li"><a href="#">
+						<img src="images/180415_6ka84k4cf8l4li2kfikc786kc2lfl_640x960.jpg_240x320.v1cAC.70.webp" alt="" />
+						<div class="yinchang">
+							找相似
+						</div>
+					<div class="guessLike-wp">
+						<div class="guessLike-w">
+							夏季百搭新款休闲人物印花甜美宽松小清新短袖T恤高腰显瘦包臀裙时尚个性开叉半身裙两件套装女
+						</div>	
+						<div class="guessLike-p clear">
+							<div class="guessLike-pl left">
+							     <b>¥99</b><span>¥141.43</span>
+							</div>
+							<div class="guessLike-pm left">
+								<img src="images/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+							</div>
+							<div class="guessLike-pr left">
+								<span>939</span>
+							</div>
+						</div>
+					</div>
+					</a></li>
+				    <li class="guessLike-li"><a href="#">
+						<img src="images/180415_6ka84k4cf8l4li2kfikc786kc2lfl_640x960.jpg_240x320.v1cAC.70.webp" alt="" />
+						<div class="yinchang">
+							找相似
+						</div>
+					<div class="guessLike-wp">
+						<div class="guessLike-w">
+							夏季百搭新款休闲人物印花甜美宽松小清新短袖T恤高腰显瘦包臀裙时尚个性开叉半身裙两件套装女
+						</div>	
+						<div class="guessLike-p clear">
+							<div class="guessLike-pl left">
+							     <b>¥99</b><span>¥141.43</span>
+							</div>
+							<div class="guessLike-pm left">
+								<img src="images/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+							</div>
+							<div class="guessLike-pr left">
+								<span>939</span>
+							</div>
+						</div>
+					</div>
+					</a></li>
+				    <li class="guessLike-li"><a href="#">
+						<img src="images/180415_6ka84k4cf8l4li2kfikc786kc2lfl_640x960.jpg_240x320.v1cAC.70.webp" alt="" />
+						<div class="yinchang">
+							找相似
+						</div>
+					<div class="guessLike-wp">
+						<div class="guessLike-w">
+							夏季百搭新款休闲人物印花甜美宽松小清新短袖T恤高腰显瘦包臀裙时尚个性开叉半身裙两件套装女
+						</div>	
+						<div class="guessLike-p clear">
+							<div class="guessLike-pl left">
+							     <b>¥99</b><span>¥141.43</span>
+							</div>
+							<div class="guessLike-pm left">
+								<img src="images/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+							</div>
+							<div class="guessLike-pr left">
+								<span>939</span>
+							</div>
+						</div>
+					</div>
+					</a></li>
+				    <li class="guessLike-li"><a href="#">
+						<img src="images/180415_6ka84k4cf8l4li2kfikc786kc2lfl_640x960.jpg_240x320.v1cAC.70.webp" alt="" />
+						<div class="yinchang">
+							找相似
+						</div>
+					<div class="guessLike-wp">
+						<div class="guessLike-w">
+							夏季百搭新款休闲人物印花甜美宽松小清新短袖T恤高腰显瘦包臀裙时尚个性开叉半身裙两件套装女
+						</div>	
+						<div class="guessLike-p clear">
+							<div class="guessLike-pl left">
+							     <b>¥99</b><span>¥141.43</span>
+							</div>
+							<div class="guessLike-pm left">
+								<img src="images/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+							</div>
+							<div class="guessLike-pr left">
+								<span>939</span>
+							</div>
+						</div>
+					</div>
+					</a></li>
+				    <li class="guessLike-li"><a href="#">
+						<img src="images/180415_6ka84k4cf8l4li2kfikc786kc2lfl_640x960.jpg_240x320.v1cAC.70.webp" alt="" />
+						<div class="yinchang">
+							找相似
+						</div>
+					<div class="guessLike-wp">
+						<div class="guessLike-w">
+							夏季百搭新款休闲人物印花甜美宽松小清新短袖T恤高腰显瘦包臀裙时尚个性开叉半身裙两件套装女
+						</div>	
+						<div class="guessLike-p clear">
+							<div class="guessLike-pl left">
+							     <b>¥99</b><span>¥141.43</span>
+							</div>
+							<div class="guessLike-pm left">
+								<img src="images/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+							</div>
+							<div class="guessLike-pr left">
+								<span>939</span>
+							</div>
+						</div>
+					</div>
+					</a></li>
+				-->
+				</ul>
+			</div>
+			<!--猜你喜欢-->
+			<div id="footer">
+				<img src="images/dibu.jpg"/>
+			</div>
+			<!--底部-->
+		</div>
+		<div id="top">
+			<div id="search" class="clear">
+			<div class="search-l left">
+				<img src="images/170904_1fj9406416501i4lkabcc0hjb8341_480x180.png"/>
+			</div>
+			<div class="search-m left">
+				<div class="search-m-box clear">
+					<div class="search-m-boxl left">
+					搜商品<span></span>
+					<ul>
+						<li>商品</li>
+						<li>店铺</li>
+					</ul>
+					</div>
+					<form class="left" action="http://list.mogujie.com/s" method="get">
+						<input type="text" name="" id="form" value="" />
+						
+						<input type="submit" name="" id="formbutton" value="搜索" />
+						<ul class="search-m-box-ul">
+							
+						</ul>
+					</form>
+				</div>
+			   </div>
+			<div class="search-r right">
+				<img src="images/180510_0hk5cb4l87bjlc65k0253jfclk2b3_440x180.png" alt="" />
+			</div>
+		</div>
+		
+		</div>
+		<!--头部搜索框-->
+		<div id="left">
+			<div class="left-gwc">
+				<a href="#">
+					<span></span>
+					<div>购物车</div>
+				</a>
+			</div>
+			<div class="left-yhj">
+				<a href="#">
+					<span></span>
+					<div>优惠卷</div>
+				</a>
+			</div>
+			<div class="left-qb">
+				<a href="#">
+					<span></span>
+					<div>钱包</div>
+				</a>
+			</div>
+			<div class="left-zj">
+				<a href="#">
+					<span></span>
+					<div>足迹</div>
+				</a>
+			</div>
+			<div class="left-top">
+				<a href="javascript:;">
+					<span></span>
+					<div>TOP</div>
+				</a>
+			</div>
+			
+		</div>
+		<!--左边列表-->
+		<div id="right">
+			<ul>
+	            <li class="active"><span>女装</span> </li>
+	            <li><span>女鞋</span> </li>
+	            <li><span>男友</span> </li>
+	            <li><span>美妆</span> </li>
+	            <li><span>内衣</span> </li>
+	            <li><span>家居</span> </li>
+	            <li><span>母婴</span> </li>
+	            <li><span>喜欢</span> </li>
+            </ul>
+		</div>
+		<!--右边列表-->
+		<script src="js/sannav.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/move.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jiekou.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/dgtp.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

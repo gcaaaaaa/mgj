@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, figure, figcaption, code, del, dfn, em, image, q, dl, dt, dd, ol, ul, li, fieldset, form, legend, table, tf, tr, th{
+	margin:0;
+	padding:0;
+	border:0;}
+li{
+	list-style:none;}
+a{
+	text-decoration:none;}
+body{
+	color: #333;
+	font-size:14px;
+	font-family:"Microsoft Yahei"}
+.clear:after{
+	content:"";
+	height:0;
+	overflow:hidden;
+	display:block;
+	clear:both;
+	visibility:hidden;}
+.left{
+	float:left}
+.right{
+	float:right;}
+.img0{
+	font-size:0;}
